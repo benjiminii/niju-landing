@@ -9,12 +9,17 @@ const config: Config = {
   theme: {
     extend: {
       backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        heroPop: "url('/images/hero-grid.svg')",
+        dots: "url('/dots.png')",
+        dot: "url('/dot.png')",
+        square: "url('/images/hero-grid.svg')",
+      },
+      colors: {
+        main: "#ff7900",
+        secondary: "#e6e6e6",
       },
     },
   },
-  plugins: [],
+  plugins: [require("daisyui")],
 };
 export default config;
